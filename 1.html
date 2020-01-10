@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>相关链接 · GitBook</title>
+        <title>Git使用说明 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -107,7 +107,7 @@
                 <a href="1.html">
             
                     
-                    相关链接
+                    Git使用说明
             
                 </a>
             
@@ -120,7 +120,7 @@
                 <a href="2.html">
             
                     
-                    Git使用说明
+                    面试题目记录
             
                 </a>
             
@@ -158,7 +158,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >相关链接</a>
+        <a href="." >Git使用说明</a>
     </h1>
 </div>
 
@@ -173,10 +173,57 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x535A;&#x5BA2;&#x56ED;">&#x535A;&#x5BA2;&#x56ED;</h3>
-<p><a href="https://www.cnblogs.com/zwtgyh/" target="_blank">cnblogs</a></p>
-<h3 id="github">git_hub</h3>
-<p><a href="https://github.com/zwtgyh?tab=repositories" target="_blank">github</a></p>
+                                <h2 id="github">github</h2>
+<ul>
+<li><p>&#x9996;&#x5148;&#x5728;github&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x590D;&#x5236;ssh&#x94FE;&#x63A5;&#x5907;&#x7528;</p>
+</li>
+<li><p>cd&#x5230;&#x5F85;&#x4E0A;&#x4F20;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF08;&#x4F8B;&apos;Desktop/gitbook)</p>
+<pre><code class="lang-CMD">  <span class="hljs-built_in">cd</span> Desktop/gitbook
+</code></pre>
+</li>
+<li><p>&#x521D;&#x59CB;&#x5316;git</p>
+<pre><code class="lang-CMD">  git init
+</code></pre>
+</li>
+<li><p>&#x514B;&#x9686;</p>
+<pre><code class="lang-CMD">  git remote add origin git@github.com:zwtgyh/Daily_notes.git
+</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x5E76;&#x6CE8;&#x91CA;</p>
+<pre><code class="lang-CMD">  git add .
+  git commit -m &quot;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&quot;
+  git push -u origin master
+</code></pre>
+</li>
+<li><p>&#x5B8C;&#x6210;</p>
+</li>
+</ul>
+<h2 id="gitbook">gitbook</h2>
+<ul>
+<li>cd&#x5230;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5939;</li>
+<li>&#x521D;&#x59CB;&#x5316;<pre><code class="lang-CMD">  gitbook init
+</code></pre>
+</li>
+<li>&#x7F16;&#x8F91;&#x5185;&#x5BB9;&#xFF0C;&#x7F16;&#x8F91;&#x5B8C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; gitbook serve &#x9884;&#x89C8;</li>
+<li>&#x7F16;&#x8F91;&#x5B8C;&#x4E4B;&#x540E;&#x9700;&#x8981; gitbook init &#xFF0C;&#x8BB0;&#x5F55;&#x4FEE;&#x6539;<h3 id="gitbook&#x548C;github&#x8FDE;&#x8D77;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x5199;&#x5B8C;&#x7684;markdown&#x8BB0;&#x5F97;push&#x5230;github&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x81F3;gitbook">gitbook&#x548C;github&#x8FDE;&#x8D77;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x5199;&#x5B8C;&#x7684;markdown&#x8BB0;&#x5F97;push&#x5230;github&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x81F3;gitbook</h3>
+</li>
+</ul>
+<h2 id="github-pages">github pages</h2>
+<ul>
+<li>gitbook&#x88AB;&#x5899;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x4E0D;&#x5982;github pages<pre><code class="lang-CMD">  git checkout -b gh-pages   #&#x65B0;&#x5EFA;&#x5206;&#x652F;
+  git push -u origin gh-pages   #&#x5C06;&#x65B0;&#x5EFA;&#x7684;&#x5206;&#x652F;push&#x5230;&#x4ED3;&#x5E93;
+  git checkout master    #&#x5207;&#x6362;&#x56DE;master&#x5206;&#x652F;
+  git clone -b gh-pages git@github.com:zwtgyh/Daily_notes.git book-end 
+#&#x5C06;gh-page&#x514B;&#x9686;&#x5230;&#x672C;&#x5730;&#x5E76;&#x547D;&#x540D;&#x4E3A;book-end
+  git checkout gh-page   #&#x5207;&#x6362;&#x5206;&#x652F;
+  <span class="hljs-built_in">cd</span> book-end   #&#x5728;&#x5206;&#x652F;gh-page&#x4E0B;<span class="hljs-built_in">cd</span>&#x8FDB;book-end
+  git add .
+  git commit -m &quot;tt&quot;
+  git push -u origin gh-pages
+  git checkout master    #&#x5207;&#x6362;&#x56DE;master&#x5206;&#x652F;
+</code></pre>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -209,7 +256,7 @@
                 </a>
                 
                 
-                <a href="2.html" class="navigation navigation-next " aria-label="Next page: Git使用说明">
+                <a href="2.html" class="navigation navigation-next " aria-label="Next page: 面试题目记录">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -220,7 +267,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"相关链接","level":"1.2","depth":1,"next":{"title":"Git使用说明","level":"1.3","depth":1,"path":"2.md","ref":"2.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.md","mtime":"2020-01-10T09:03:41.382Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-10T09:50:20.236Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git使用说明","level":"1.2","depth":1,"next":{"title":"面试题目记录","level":"1.3","depth":1,"path":"2.md","ref":"2.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.md","mtime":"2020-01-10T12:14:39.160Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-10T15:50:24.654Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -228,10 +275,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
