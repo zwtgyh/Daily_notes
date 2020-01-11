@@ -1,6 +1,6 @@
 # Summary
 
-* [简介](README.md)
-* [相关链接](1.md)
-* [Git使用说明](2.md)
+* [Introduction](README.md)
+* [git相关用法](1.md)
+* [面试笔记](2.md)
 

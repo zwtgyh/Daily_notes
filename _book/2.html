@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git使用说明 · GitBook</title>
+        <title>面试笔记 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -92,7 +92,7 @@
                 <a href="./">
             
                     
-                    简介
+                    Introduction
             
                 </a>
             
@@ -105,7 +105,7 @@
                 <a href="1.html">
             
                     
-                    相关链接
+                    git相关用法
             
                 </a>
             
@@ -118,7 +118,7 @@
                 <a href="2.html">
             
                     
-                    Git使用说明
+                    面试笔记
             
                 </a>
             
@@ -156,7 +156,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Git使用说明</a>
+        <a href="." >面试笔记</a>
     </h1>
 </div>
 
@@ -171,41 +171,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="github">github</h2>
-<ul>
-<li><p>&#x9996;&#x5148;&#x5728;github&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x590D;&#x5236;ssh&#x94FE;&#x63A5;&#x5907;&#x7528;</p>
-</li>
-<li><p>cd&#x5230;&#x5F85;&#x4E0A;&#x4F20;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF08;&#x4F8B;&apos;Desktop/gitbook)</p>
-<pre><code class="lang-CMD">  <span class="hljs-built_in">cd</span> Desktop/gitbook
-</code></pre>
-</li>
-<li><p>&#x521D;&#x59CB;&#x5316;git</p>
-<pre><code class="lang-CMD">  git init
-</code></pre>
-</li>
-<li><p>&#x514B;&#x9686;</p>
-<pre><code class="lang-CMD">  git remote add origin git@github.com:zwtgyh/Daily_notes.git
-</code></pre>
-</li>
-<li><p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x5E76;&#x6CE8;&#x91CA;</p>
-<pre><code class="lang-CMD">  git add .
-  git commit -m &quot;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&quot;
-  git push -u origin master
-</code></pre>
-</li>
-<li><p>&#x5B8C;&#x6210;</p>
-</li>
-</ul>
-<h2 id="gitbook">gitbook</h2>
-<ul>
-<li>cd&#x5230;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5939;</li>
-<li>&#x521D;&#x59CB;&#x5316;<pre><code class="lang-CMD">  gitbook init
-</code></pre>
-</li>
-<li>&#x7F16;&#x8F91;&#x5185;&#x5BB9;&#xFF0C;&#x7F16;&#x8F91;&#x5B8C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; gitbook serve &#x9884;&#x89C8;</li>
-<li>&#x7F16;&#x8F91;&#x5B8C;&#x4E4B;&#x540E;&#x9700;&#x8981; gitbook init &#xFF0C;&#x8BB0;&#x5F55;&#x4FEE;&#x6539;<h3 id="gitbook&#x548C;github&#x8FDE;&#x8D77;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x5199;&#x5B8C;&#x7684;markdown&#x8BB0;&#x5F97;push&#x5230;github&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x81F3;gitbook">gitbook&#x548C;github&#x8FDE;&#x8D77;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x5199;&#x5B8C;&#x7684;markdown&#x8BB0;&#x5F97;push&#x5230;github&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x81F3;gitbook</h3>
-</li>
-</ul>
+                                <h2 id="0----adaboost&#x3001;gbdt&#x3001;xgboost&#x7684;&#x533A;&#x522B;&#xFF1F;">0.    Adaboost&#x3001;GBDT&#x3001;XGBoost&#x7684;&#x533A;&#x522B;&#xFF1F;</h2>
+<pre><code>* Adaboost&#x5F3A;&#x8C03;&#x81EA;&#x9002;&#x5E94;&#xFF0C;GBDT&#x5F3A;&#x8C03;&#x51CF;&#x5C0F;&#x6B8B;&#x5DEE;
+* Adaboost&#x901A;&#x8FC7;&#x9519;&#x8BEF;&#x7387;&#x6765;&#x66F4;&#x65B0;&#x6837;&#x672C;&#x6743;&#x91CD;&#xFF0C;&#x6765;&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x76EE;&#x7684;
+* GBDT&#x6BCF;&#x4E00;&#x8F6E;&#x8BAD;&#x7EC3;&#x662F;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x4E0A;&#x4E00;&#x8F6E;&#x7684;&#x6B8B;&#x5DEE;&#xFF0C;&#x8FDB;&#x800C;&#x5728;&#x6B8B;&#x5DEE;&#x51CF;&#x5C11;&#x7684;&#x65B9;&#x5411;&#x5373;&#x8D1F;&#x68AF;&#x5EA6;&#x65B9;&#x5411;&#x4E0A;&#x5EFA;&#x7ACB;&#x65B0;&#x6811;
+* XGBoost&#x662F;GBDT&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x548C;GBDT&#x4E3B;&#x8981;&#x662F;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x4E0A;&#x7684;&#x533A;&#x522B;
+* XGBoost&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5E73;&#x65B9;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;hinge&#x635F;&#x5931;&#x51FD;&#x6570;&#x4EE5;&#x53CA;&#x81EA;&#x5B9A;&#x4E49;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3002;
+</code></pre><h2 id="1--gbdt&#x548C;rf&#x6709;&#x54EA;&#x4E9B;&#x533A;&#x522B;&#xFF1F;">1.  GBDT&#x548C;RF&#x6709;&#x54EA;&#x4E9B;&#x533A;&#x522B;&#xFF1F;</h2>
+<h2 id="2--mysql&#x8868;&#x7684;&#x5185;&#x8FDE;&#x63A5;&#x3001;&#x5DE6;&#x8FDE;&#x63A5;&#x548C;&#x53F3;&#x8FDE;&#x63A5;&#x7684;&#x533A;&#x522B;&#xFF1F;">2.  MySQL&#x8868;&#x7684;&#x5185;&#x8FDE;&#x63A5;&#x3001;&#x5DE6;&#x8FDE;&#x63A5;&#x548C;&#x53F3;&#x8FDE;&#x63A5;&#x7684;&#x533A;&#x522B;&#xFF1F;</h2>
+<pre><code>* &#x5185;&#x8FDE;&#x63A5;&#xFF1A;&#x7EC4;&#x5408;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x8FD4;&#x56DE;&#x5173;&#x8054;&#x5B57;&#x6BB5;&#x76F8;&#x7B26;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x8868;&#x7684;&#x4EA4;&#x96C6;&#x90E8;&#x5206;
+* &#x5DE6;&#x8FDE;&#x63A5;&#xFF1A;&#x5DE6;&#x8868;(a_table)&#x7684;&#x8BB0;&#x5F55;&#x5C06;&#x4F1A;&#x5168;&#x90E8;&#x8868;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x800C;&#x53F3;&#x8868;(b_table)&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x7B26;&#x5408;&#x641C;&#x7D22;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x53F3;&#x8868;&#x8BB0;&#x5F55;&#x4E0D;&#x8DB3;&#x7684;&#x5730;&#x65B9;&#x5747;&#x4E3A;NULL
+* &#x53F3;&#x8FDE;&#x63A5;&#xFF1A;&#x5DE6;&#x8868;(a_table)&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x7B26;&#x5408;&#x641C;&#x7D22;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x800C;&#x53F3;&#x8868;(b_table)&#x7684;&#x8BB0;&#x5F55;&#x5C06;&#x4F1A;&#x5168;&#x90E8;&#x8868;&#x793A;&#x51FA;&#x6765;&#x3002;&#x5DE6;&#x8868;&#x8BB0;&#x5F55;&#x4E0D;&#x8DB3;&#x7684;&#x5730;&#x65B9;&#x5747;&#x4E3A;NULL
+</code></pre><h2 id="3--mysql&#x67E5;&#x8BE2;&#x7B2C;n&#x5927;&#x7684;&#x6570;&#x636E;&#xFF1F;">3.  MySQL&#x67E5;&#x8BE2;&#x7B2C;N&#x5927;&#x7684;&#x6570;&#x636E;&#xFF1F;</h2>
+<h2 id="4--&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x3001;&#x903B;&#x8F91;&#x56DE;&#x5F52;&#x3001;&#x611F;&#x77E5;&#x673A;&#x3001;svm&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;">4.  &#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x3001;&#x903B;&#x8F91;&#x56DE;&#x5F52;&#x3001;&#x611F;&#x77E5;&#x673A;&#x3001;SVM&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<h2 id="5--&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x600E;&#x4E48;&#x9009;&#x62E9;&#x5F31;&#x5B66;&#x4E60;&#x5668;&#xFF1F;&#x662F;&#x968F;&#x673A;&#x9009;&#x62E9;&#x5417;&#xFF1F;">5.  &#x96C6;&#x6210;&#x5B66;&#x4E60;&#x600E;&#x4E48;&#x9009;&#x62E9;&#x5F31;&#x5B66;&#x4E60;&#x5668;&#xFF1F;&#x662F;&#x968F;&#x673A;&#x9009;&#x62E9;&#x5417;&#xFF1F;</h2>
+<pre><code>* &#x8981;&#x6839;&#x636E;&#x76EE;&#x6807;&#x95EE;&#x9898;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x770B;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x65B9;&#x5DEE;&#x8FD8;&#x662F;&#x504F;&#x5DEE;&#xFF0C;&#x91C7;&#x7528;&#x67D0;&#x4E2A;&#x5F31;&#x5B66;&#x4E60;&#x5668;&#x8FDB;&#x884C;&#x9884;&#x62DF;&#x5408;&#xFF0C;&#x9009;&#x53D6;&#x76EE;&#x6807;&#x95EE;&#x9898;&#x6548;&#x679C;&#x597D;&#x7684;&#x5F31;&#x5B66;&#x4E60;&#x5668;&#x6765;&#x6784;&#x5EFA;&#x96C6;&#x6210;&#x5B66;&#x4E60;
+</code></pre><h2 id="6--svm&#x3001;cart&#x3001;knn&#x3001;glm&#x4E3B;&#x8981;&#x662F;&#x51CF;&#x5C0F;&#x65B9;&#x5DEE;&#x8FD8;&#x662F;&#x504F;&#x5DEE;&#xFF1F;">6.  SVM&#x3001;CART&#x3001;KNN&#x3001;GLM&#x4E3B;&#x8981;&#x662F;&#x51CF;&#x5C0F;&#x65B9;&#x5DEE;&#x8FD8;&#x662F;&#x504F;&#x5DEE;&#xFF1F;</h2>
+<h2 id="7--&#x5B57;&#x5178;&#x4E2D;&#x5BF9;key&#x7684;&#x8981;&#x6C42;&#xFF1F;">7.  &#x5B57;&#x5178;&#x4E2D;&#x5BF9;key&#x7684;&#x8981;&#x6C42;&#xFF1F;</h2>
+<pre><code>* &#x5FC5;&#x987B;&#x6709;__hash__&#x65B9;&#x6CD5;&#xFF1B;Python&#x4E2D;&#x9664;&#x4E86;list&#x3001;dict&#x3001;set&#x548C;&#x5185;&#x90E8;&#x81F3;&#x5C11;&#x5E26;&#x6709;&#x4E0A;&#x8FF0;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x4E4B;&#x4E00;&#x7684;tuple&#x4E4B;&#x5916;&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x80FD;&#x5F53;key
+</code></pre><h2 id="8--id3&#x3001;c45&#x600E;&#x4E48;&#x505A;&#x5206;&#x7C7B;&#xFF1F;cart&#x51B3;&#x7B56;&#x6811;&#x600E;&#x4E48;&#x505A;&#x5206;&#x7C7B;&#xFF1F;&#x600E;&#x4E48;&#x505A;&#x56DE;&#x5F52;&#xFF1F;">8.  ID3&#x3001;C4.5&#x600E;&#x4E48;&#x505A;&#x5206;&#x7C7B;&#xFF1F;CART&#x51B3;&#x7B56;&#x6811;&#x600E;&#x4E48;&#x505A;&#x5206;&#x7C7B;&#xFF1F;&#x600E;&#x4E48;&#x505A;&#x56DE;&#x5F52;&#xFF1F;</h2>
+<pre><code>* ID3&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6700;&#x5927;&#x5316;&#xFF0C;C4.5&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6BD4;&#x6700;&#x5927;&#x5316;&#xFF0C;CART&#x5206;&#x7C7B;&#x6811;&#x4F7F;&#x7528;&#x57FA;&#x5C3C;&#x6307;&#x6570;&#x6700;&#x5927;&#x5316;&#x539F;&#x5219;&#x5EFA;&#x6811;&#xFF0C;CART&#x56DE;&#x5F52;&#x4E66;&#x7684;&#x5212;&#x5206;&#x8282;&#x70B9;&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x201C;&#x5E73;&#x65B9;&#x8BEF;&#x5DEE;&#x201D;
+</code></pre><h2 id="9--&#x611F;&#x77E5;&#x673A;&#x548C;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7684;&#x533A;&#x522B;&#xFF1F;">9.  &#x611F;&#x77E5;&#x673A;&#x548C;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7684;&#x533A;&#x522B;&#xFF1F;</h2>
+<pre><code>* &#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x5BFB;&#x627E;&#x51FA;&#x7684;&#x8D85;&#x5E73;&#x9762;&#x552F;&#x4E00;&#x4E14;&#x6700;&#x4F18;&#xFF0C;&#x800C;&#x611F;&#x77E5;&#x673A;&#x662F;&#x6839;&#x636E;&#x8BEF;&#x5206;&#x7C7B;&#x70B9;&#x5B9A;&#x4E49;&#x51FA;&#x7684;&#x4EE3;&#x4EF7;&#x51FD;&#x6570;&#x6C42;&#x5F97;&#x7684;&#x8D85;&#x5E73;&#x9762;&#x4E0D;&#x552F;&#x4E00;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;
+</code></pre><h2 id="10--l1&#x548C;l2&#x7684;&#x533A;&#x522B;">10.  L1&#x548C;L2&#x7684;&#x533A;&#x522B;?</h2>
+<h2 id="11--&#x903B;&#x8F91;&#x56DE;&#x5F52;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF1F;">11.  &#x903B;&#x8F91;&#x56DE;&#x5F52;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF1F;</h2>
+<h2 id="12--&#x534F;&#x540C;&#x8FC7;&#x6EE4;&#xFF1F;">12.  &#x534F;&#x540C;&#x8FC7;&#x6EE4;&#xFF1F;</h2>
+<pre><code>* &#x534F;&#x540C;&#x8FC7;&#x6EE4;&#x5206;&#x6790;&#x7528;&#x6237;&#x5174;&#x8DA3;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x7FA4;&#x4E2D;&#x627E;&#x5230;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x7684;&#x76F8;&#x4F3C;&#xFF08;&#x5174;&#x8DA3;&#xFF09;&#x7528;&#x6237;&#xFF0C;&#x7EFC;&#x5408;&#x8FD9;&#x4E9B;&#x76F8;&#x4F3C;&#x7528;&#x6237;&#x5BF9;&#x67D0;&#x4E00;&#x4FE1;&#x606F;&#x7684;&#x8BC4;&#x4EF7;&#xFF0C;&#x5F62;&#x6210;&#x7CFB;&#x7EDF;&#x5BF9;&#x8BE5;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x5BF9;&#x6B64;&#x4FE1;&#x606F;&#x7684;&#x559C;&#x597D;&#x7A0B;&#x5EA6;&#x9884;&#x6D4B;
+</code></pre><h2 id="13--fm&#x6A21;&#x578B;&#xFF1F;">13.  FM&#x6A21;&#x578B;&#xFF1F;</h2>
+<h2 id="14--tf-idf&#xFF1F;">14.  TF-IDF&#xFF1F;</h2>
+<h2 id="15--hive&#x5185;&#x90E8;&#x8868;&#x548C;&#x5916;&#x90E8;&#x8868;&#xFF1F;">15.  Hive&#x5185;&#x90E8;&#x8868;&#x548C;&#x5916;&#x90E8;&#x8868;&#xFF1F;</h2>
+<pre><code>* &#x5220;&#x9664;&#x5185;&#x90E8;&#x8868;&#xFF0C;&#x5C31;&#x5220;&#x9664;&#x4E86;&#x5143;&#x6570;&#x636E;&#x548C;&#x6570;&#x636E;&#xFF1B;&#x5220;&#x9664;&#x5916;&#x90E8;&#x8868;&#xFF0C;&#x53EA;&#x5220;&#x9664;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x5220;&#x9664;&#x6570;&#x636E;
+* &#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5185;&#x90E8;&#x8868;&#x548C;&#x5916;&#x90E8;&#x8868;&#x7684;&#x533A;&#x522B;&#x4E0D;&#x5927;&#xFF0C;&#x5982;&#x679C;&#x6240;&#x6709;&#x6570;&#x636E;&#x90FD;&#x5728;Hive&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x503E;&#x5411;&#x4E8E;&#x9009;&#x62E9;&#x5185;&#x90E8;&#x8868;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x662F;Hive&#x548C;&#x5176;&#x4ED6;&#x5DE5;&#x5177;&#x8981;&#x9488;&#x5BF9;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5916;&#x90E8;&#x8868;&#x66F4;&#x5408;&#x9002;&#xFF0C;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x8868;&#x8BBF;&#x95EE;&#x5B58;&#x50A8;&#x5728;HDFS&#x4E0A;&#x7684;&#x521D;&#x59CB;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;Hive&#x8F6C;&#x6362;&#x6570;&#x636E;&#x5E76;&#x5B58;&#x50A8;&#x5230;&#x5185;&#x90E8;&#x8868;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x8868;&#x7684;&#x573A;&#x666F;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x4E3A;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x6709;&#x591A;&#x4E2A;Schema
+* &#x901A;&#x8FC7;&#x5916;&#x90E8;&#x8868;&#x548C;&#x5185;&#x90E8;&#x8868;&#x7684;&#x6BD4;&#x8F83;&#xFF0C;Hive&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x9488;&#x5BF9;&#x5B58;&#x50A8;&#x5728;HDFS&#x4E0A;&#x7684;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7BA1;&#x7406;&#x5B58;&#x50A8;&#x5728;HDFS&#x4E0A;&#x7684;&#x6570;&#x636E;
+</code></pre><h2 id="16--hive&#x5206;&#x533A;&#x8868;&#x548C;&#x5206;&#x6876;&#x8868;">16.  Hive&#x5206;&#x533A;&#x8868;&#x548C;&#x5206;&#x6876;&#x8868;?</h2>
+<pre><code>* Hive&#x6570;&#x636E;&#x8868;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x67D0;&#x4E9B;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x5206;&#x533A;&#x64CD;&#x4F5C;&#xFF0C;&#x7EC6;&#x5316;&#x6570;&#x636E;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x90E8;&#x5206;&#x67E5;&#x8BE2;&#x66F4;&#x52A0;&#x9AD8;&#x6548;&#xFF0C;&#x540C;&#x65F6;&#x8868;&#x548C;&#x5206;&#x533A;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x5212;&#x5206;&#x4E3A;&#x6876;(Buckets)&#xFF0C;&#x5206;&#x6876;&#x8868;&#x7684;&#x539F;&#x7406;&#x548C;MapReduce&#x7F16;&#x7A0B;&#x4E2D;&#x7684;HashPartitioner&#x539F;&#x7406;&#x7C7B;&#x4F3C;
+* &#x5206;&#x533A;&#x548C;&#x5206;&#x6876;&#x90FD;&#x662F;&#x7EC6;&#x5316;&#x6570;&#x636E;&#x7BA1;&#x7406;&#xFF0C;&#x4F46;&#x5206;&#x533A;&#x8868;&#x662F;&#x624B;&#x52A8;&#x6DFB;&#x52A0;&#x5206;&#x533A;&#xFF0C;&#x7531;&#x4E8E;Hive&#x662F;&#x8BFB;&#x6A21;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x6DFB;&#x52A0;&#x8FDB;&#x5206;&#x533A;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x505A;&#x6A21;&#x5F0F;&#x6821;&#x9A8C;&#xFF0C;&#x5206;&#x6876;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x6309;&#x7167;&#x67D0;&#x4E9B;&#x5206;&#x6876;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;hash&#x6563;&#x5217;&#x6240;&#x5F62;&#x6210;&#x7684;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6570;&#x636E;&#x7684;&#x51C6;&#x786E;&#x6027;&#x9AD8;&#x5F88;&#x591A;&#x3002;hash&#x5C31;&#x662F;&#x627E;&#x5230;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x548C;&#x6570;&#x636E;&#x5B58;&#x653E;&#x5730;&#x5740;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;
+</code></pre><h2 id="17--&#x8BD5;&#x5B9E;&#x73B0;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x7684;&#x7528;&#x6237;&#x63A8;&#x8350;&#xFF1F;">17.  &#x8BD5;&#x5B9E;&#x73B0;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x7684;&#x7528;&#x6237;&#x63A8;&#x8350;&#xFF1F;</h2>
+<h2 id="18--&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7B97;&#x6CD5;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;">18.  &#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7B97;&#x6CD5;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</h2>
+<h2 id="19--&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x95EE;&#x9898;&#xFF1F;">19.  &#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x95EE;&#x9898;&#xFF1F;</h2>
+<h2 id="20--&#x725B;&#x987F;&#x6CD5;&#x5728;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF1F;">20.  &#x725B;&#x987F;&#x6CD5;&#x5728;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF1F;</h2>
+<h2 id="21--rf&#x539F;&#x7406;&#xFF1F;">21.  RF&#x539F;&#x7406;&#xFF1F;</h2>
+<h2 id="22--rf&#x5728;&#x7279;&#x5F81;&#x7B5B;&#x9009;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF1F;">22.  RF&#x5728;&#x7279;&#x5F81;&#x7B5B;&#x9009;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF1F;</h2>
+<h2 id="23--&#x6570;&#x636E;&#x6E05;&#x6D17;&#x4E2D;&#x600E;&#x4E48;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E0D;&#x5747;&#x8861;&#xFF1F;">23.  &#x6570;&#x636E;&#x6E05;&#x6D17;&#x4E2D;&#x600E;&#x4E48;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E0D;&#x5747;&#x8861;&#xFF1F;</h2>
+<h2 id="24--&#x6B20;&#x91C7;&#x6837;&#x548C;&#x8FC7;&#x91C7;&#x6837;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;">24.  &#x6B20;&#x91C7;&#x6837;&#x548C;&#x8FC7;&#x91C7;&#x6837;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<h2 id="25--&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x4E2D;&#x7684;&#x52A8;&#x91CF;&#xFF1F;">25.  &#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x4E2D;&#x7684;&#x52A8;&#x91CF;&#xFF1F;</h2>
+<h2 id="26--roc&#x66F2;&#x7EBF;&#x5236;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF1F;auc&#xFF1F;pr&#x66F2;&#x7EBF;&#xFF1F;">26.  ROC&#x66F2;&#x7EBF;&#x5236;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF1F;AUC&#xFF1F;PR&#x66F2;&#x7EBF;&#xFF1F;</h2>
 
                                 
                                 </section>
@@ -233,7 +243,7 @@
 
             
                 
-                <a href="1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 相关链接">
+                <a href="1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: git相关用法">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -245,7 +255,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git使用说明","level":"1.3","depth":1,"previous":{"title":"相关链接","level":"1.2","depth":1,"path":"1.md","ref":"1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2.md","mtime":"2020-01-10T09:49:15.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-10T09:50:20.236Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面试笔记","level":"1.3","depth":1,"previous":{"title":"git相关用法","level":"1.2","depth":1,"path":"1.md","ref":"1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2.md","mtime":"2020-01-10T16:45:42.394Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-10T16:45:59.332Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
